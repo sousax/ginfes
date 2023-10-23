@@ -1,0 +1,46 @@
+{
+  "name": "ginfes",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Um programa em linha de comando para baixar notas fiscais do Ginfes.",
+  "type": "module",
+  "keywords": [
+    "ginfes",
+    "nfs-e"
+  ],
+  "bin": {
+    "ginfes": "./dist/index.js"
+  },
+  "license": "UNLICENSED",
+  "author": "Enzo Pita <contato@enzopita.com>",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsup",
+    "build:watch": "tsup --watch",
+    "dev": "tsx src/index.ts",
+    "lint": "eslint . --ext .ts",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "axios": "^1.5.1",
+    "commander": "^11.0.0",
+    "inquirer": "^9.2.11",
+    "playwright": "^1.39.0",
+    "read-excel-file": "^5.7.1",
+    "tasuku": "^2.0.1"
+  },
+  "devDependencies": {
+    "@types/inquirer": "^9.0.4",
+    "@types/node": "^20.8.4",
+    "@typescript-eslint/eslint-plugin": "^6.4.0",
+    "eslint": "^8.51.0",
+    "eslint-config-standard-with-typescript": "^39.1.1",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-n": "^15.0.0 || ^16.0.0 ",
+    "eslint-plugin-perfectionist": "^2.1.0",
+    "eslint-plugin-promise": "^6.0.0",
+    "tsup": "^7.2.0",
+    "tsx": "^3.13.0",
+    "typescript": "^5.2.2"
+  }
+}
