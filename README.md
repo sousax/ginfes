@@ -42,6 +42,6 @@ Opções do comando `download`:
 | `-s, --sheet <sheet>` | Nome da aba da planilha | pergunta |
 | `-a, --amount <amount>` | Quantidade máxima de notas por requisição | `500` |
 | `-o, --output <output>` | Pasta onde os XMLs são salvos | `./notas-fiscais` |
-| `--headless <headless>` | `true` roda o navegador sem janela | navegador visível |
+| `--headless <headless>` | `false` abre o navegador com janela | `true` (sem janela) |
 
-`pnpm build` gera só `dist/index.js` (com `bundle: false`), que não roda sozinho porque importa `./download` sem extensão. Por isso use `pnpm dev`.
+Para usar sem `tsx`: `pnpm build` e depois `pnpm start download ...` (ou `node dist/index.js download ...`).

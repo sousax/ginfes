@@ -1,7 +1,8 @@
 import { defineConfig } from 'tsup'
 
 export default defineConfig({
-  bundle: false,
+  bundle: true,
+  banner: { js: '#!/usr/bin/env node' },
   splitting: false,
   sourcemap: true,
   clean: true,

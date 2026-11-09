@@ -28,7 +28,7 @@ program.command('download')
     options.amount = Number(options.amount)
     options.file = path.resolve(baseDir, options.file)
     options.output = path.resolve(baseDir, options.output)
-    options.headless = options.headless === 'true'
+    options.headless = String(options.headless) !== 'false'
     options.sheet = options.sheet ?? undefined
     options.user = options.user ?? undefined
     options.password = options.password ?? undefined
